@@ -1,0 +1,148 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      FICHA DE ANAMNESE
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-col class="ion-padding">
+    <div>
+   MOTIVO DO EXAME:
+    </div>
+  </ion-col>
+  
+  
+  <!-- Checkbox Colors -->
+  <ion-checkbox color="primary"></ion-checkbox>⁭ Dor torácica	
+  <ion-checkbox color="secondary"></ion-checkbox> Equiv. anginoso	⁭⁭
+  <ion-checkbox color="danger"></ion-checkbox>⁭ Arritmia
+  <ion-checkbox color="light"></ion-checkbox>Síncope
+  ⁭⁭<ion-checkbox color="dark"></ion-checkbox>  pós-SCA	⁭
+  <ion-checkbox color="secondary"></ion-checkbox>⁭⁭ pós-CRVM	⁭
+  <ion-checkbox color="danger"></ion-checkbox> pós-PTCA
+  <ion-checkbox color="light"></ion-checkbox>	⁭⁭   Risco cirúrgico
+  ⁭<ion-checkbox color="dark"></ion-checkbox>  Alteração exame	⁭⁭ 	
+  <ion-checkbox color="primary"></ion-checkbox> Lesão coronária
+  <ion-checkbox color="secondary"></ion-checkbox> ICC
+  <!-- Checkboxes in a List -->
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  
+  <ion-col class="ion-padding">
+    <div>
+    HDA
+    </div>
+  </ion-col>
+  
+  
+  <!-- Checkbox Colors -->
+  <ion-checkbox color="primary"></ion-checkbox> Assintomático
+  <ion-checkbox color="secondary"></ion-checkbox> Cansaço
+  <ion-checkbox color="danger"></ion-checkbox> Síncope
+  <ion-checkbox color="light"></ion-checkbox> Dor torácica típica
+  ⁭⁭<ion-checkbox color="dark"></ion-checkbox> Dor torácica atípica
+  <ion-checkbox color="secondary"></ion-checkbox> Palpitações
+  <ion-checkbox color="danger"></ion-checkbox> Dispnéia aos esforços
+  <ion-checkbox color="light"></ion-checkbox> Dispnéia de repouso
+  <!-- Checkboxes in a List -->
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  
+  <ion-col class="ion-padding">
+    <div>
+   HPP- FATORES DE RISCO
+    </div>
+  </ion-col>
+  
+  
+  <!-- Checkbox Colors -->
+  <ion-checkbox color="primary"></ion-checkbox> HAS
+  <ion-checkbox color="secondary"></ion-checkbox> D.M.
+  <ion-checkbox color="danger"></ion-checkbox> Tabagismo
+  <ion-checkbox color="light"></ion-checkbox> Ex-tabagismo 
+  ⁭⁭<ion-checkbox color="dark"></ion-checkbox> Obesidade
+  <ion-checkbox color="secondary"></ion-checkbox> Dislipidemia
+  <ion-checkbox color="danger"></ion-checkbox> HF
+  <ion-checkbox color="light"></ion-checkbox> Menopausa 
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  
+  <ion-col class="ion-padding">
+    <div>
+   DAC Prévia:
+    </div>
+  </ion-col>
+  
+  
+  <!-- Checkbox Colors -->
+  <ion-checkbox color="primary"></ion-checkbox> IAM
+  <ion-checkbox color="secondary"></ion-checkbox> CRVM
+  <ion-checkbox color="danger"></ion-checkbox> PTCA
+  <ion-checkbox color="light"></ion-checkbox> CAT alterado
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  
+  <ion-col class="ion-padding">
+    <div>
+    COMORBIDADES:
+    </div>
+  </ion-col>
+  
+  
+  <!-- Checkbox Colors -->
+  <ion-checkbox color="primary"></ion-checkbox> AVC
+  <ion-checkbox color="secondary"></ion-checkbox> IRC
+  <ion-checkbox color="danger"></ion-checkbox> AAo
+  <ion-checkbox color="light"></ion-checkbox> Dça Vasc.
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  
+  
+  <ion-col class="ion-padding">
+    <div>
+     MEDICAMENTOS:
+    </div>
+  </ion-col>
+  
+  
+  <!-- Checkbox Colors -->
+  <ion-checkbox color="primary"></ion-checkbox> Bloq. Cálcio
+  <ion-checkbox color="secondary"></ion-checkbox> Nitrato
+  <ion-checkbox color="danger"></ion-checkbox> Estatina
+  <ion-checkbox color="light"></ion-checkbox> BRA
+  <ion-checkbox color="dark"></ion-checkbox> Clopido.rel
+  <ion-checkbox color="secondary"></ion-checkbox> AAS
+  <ion-checkbox color="danger"></ion-checkbox> β-bloqueador
+  <ion-checkbox color="light"></ion-checkbox> Diurético
+  ⁭<ion-checkbox color="dark"></ion-checkbox> IECA
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
